@@ -3,15 +3,15 @@
 #define size 15
 using namespace std;
 
-char getMaxChar(char[]);
+char getMaxChar(char[]); //For returning the max char in a char array
 
 char getMaxChar(char charArr[]) {
-    char maxChar = charArr[0]; 
-    int len = strlen(charArr);
+    char maxChar = charArr[0]; //Assume that the first char in array is the max
+    int len = strlen(charArr); //Get the length
 
     for(int i = 1; i < len; i++) {
-        if((int)charArr[i] > (int)maxChar) {
-            maxChar = charArr[i]; 
+        if((int)charArr[i] > (int)maxChar) { 
+            maxChar = charArr[i]; //Reassign max if current char is greater than current max
         }
     }
 
