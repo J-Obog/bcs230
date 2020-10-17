@@ -1,5 +1,3 @@
-//using multi-dimensional array, create 3 arrays each is 2X2. Sum both matrices in the result matrix.
-
 #include <iostream>
 #define size 2
 using namespace std; 
@@ -29,12 +27,11 @@ void matrixSum(int matrix_1[][size], int matrix_2[][size], int matrix_3[][size])
 }
 
 int main() {
-    int mat1[][size] = {{1,1},{1,1}};
-    int mat2[][size] = {{1,1}, {1,1}}; 
-    int result[][size]; 
+    int mat1[][size] = {{1,0},{3,1}};
+    int mat2[][size] = {{1,2}, {4,1}}; 
+    int result[][size] = {0}; 
 
     matrixSum(mat1, mat2, result);
     printMatrix(result);
-
     return 0; 
 }
